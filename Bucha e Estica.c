@@ -8,7 +8,7 @@ int i=0, n, maior, menor;
 
 	do {
 		printf("Diz aí um número, TWIN: ");
-		scanf("%i", &n);
+		scanf_s("%i", &n);
 
 		if (n != 0) {
 			if (i==0) {
