@@ -8,7 +8,7 @@ int main(void)
     float n, soma = 0;
 
     printf("Quantos numeros quer somar? ");
-    scanf("%d", &quantidade);
+    scanf_s("%d", &quantidade);
 
     while (i < quantidade) {
         printf("Digite um numero: ");
