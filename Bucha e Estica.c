@@ -4,30 +4,32 @@
 int main(void)
 {
 	setlocale(LC_ALL, "");
-int i=0, n, maior, menor;
+	int i, n, maior, menor, quantos;
+	printf("Quantos numeros tem a sua lista?");
+	scanf_s("%d", &quantos);
 
-	do {
-		printf("Diz aí um número, TWIN: ");
-		scanf_s("%i", &n);
+	for (i = 0; i < quantos; i++)
+	{
+		printf("Quais sao os numeros");
+		scanf_s("%d", &n);
 
-		if (n != 0) {
-			if (i==0) {
-				i=1;
-				maior=n;
-				menor=n;
+		if (i == 0) {
+			maior = n;
+			menor = n;
+		}
+		else {
+			if (n > maior) {
+				maior = n;
 			}
-			else {
-				if (n>maior) {
-					maior=n;
-				}
-				if (n<menor) {
-					menor=n;
-				}
+			if (n < menor) {
+				menor = n;
 			}
 		}
-	} while (n != 0);
-	
+	}
+
+
 	printf("O maior número é %i, TWIN...\n", maior);
 	printf("O menor número é %i, TWIN...\n", menor);
+
 	return 0;
 }
