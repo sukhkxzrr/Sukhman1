@@ -16,5 +16,3 @@ int main(void)
     printf("a soma dos numeros que escreveu e %.0f e escreveu %i numeros", media, i);
     return 0;
 }
-
-
