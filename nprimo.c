@@ -4,28 +4,23 @@
 int main(void)
 {
 	setlocale(LC_ALL, "");
-	int n, i, contar;
+	int n, i, contar=0;
 
 	printf("Fala um numero:");
-	scanf_s("%i", &n);
+	scanf("%i", &n);
 
 	for (i = n; i >= 1; i--) {
 		if (n % i == 0) {
 			contar++;
 		}
-		if
-		
-		
-		
-		
-		
-		printf("O número é primo!\n");
-		}
-		else {
-			printf("O número não é primo!\n");
-		}
 	}
+
+	if (contar==2) {
+		printf("O nÃºmero Ã© primo!\n");
+	}
+	else {
+		printf("O nÃºmero nÃ£o Ã© primo!\n");
+	}
+	
 	return 0;
 }
-
-
