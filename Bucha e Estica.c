@@ -8,16 +8,13 @@ int main(void)
 	printf("Quantos numeros tem a sua lista?");
 	scanf_s("%d", &quantos);
 
-	for (i = 0; i < quantos; i++)
-	{
-		printf("Quais sao os numeros");
-		scanf_s("%d", &n);
+	do {
+		maior= -2147483648, menor =2147483647;
+		for (i = 0; i < quantos; i++)
+		{
+			printf("Quais sao os numeros");
+			scanf("%d", &n);
 
-		if (i == 0) {
-			maior = n;
-			menor = n;
-		}
-		else {
 			if (n > maior) {
 				maior = n;
 			}
@@ -25,11 +22,8 @@ int main(void)
 				menor = n;
 			}
 		}
-	}
-
-
-	printf("O maior número é %i, TWIN...\n", maior);
-	printf("O menor número é %i, TWIN...\n", menor);
+	} while (n!=0);
+	printf("O número maior é %i e O número menor é %i, TWIN...\n", maior, menor);
 
 	return 0;
 }
