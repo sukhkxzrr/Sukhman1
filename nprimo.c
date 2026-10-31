@@ -7,7 +7,7 @@ int main(void)
 	int n, i, contar=0;
 
 	printf("Fala um numero:");
-	scanf("%i", &n);
+	scanf_s("%i", &n);
 
 	for (i = n; i >= 1; i--) {
 		if (n % i == 0) {
