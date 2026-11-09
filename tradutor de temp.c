@@ -5,42 +5,23 @@
 int main(void)
 
 {
-
 	setlocale(LC_ALL, "");
-
 	float valor;
-
 	char type;
 
-	printf("CÈlsius (C) ou Farendjenn (F)?\n");
-
+	printf("C√©lsius (C) ou Farendjenn (F)?\n");
 	scanf_s("%c", &type);
-
-	if (type == 'C' || type == 'c') {
-
-		printf("Diz l· qual È a temperatura em CÈlsius\n");
-
-		scanf_s("%f", &valor);
-
-		valor = (valor - 32) * 5 / 9;
-
-		printf("Em fortnite È %2.f\n", valor);
-
-	}
-
-	else {
-
-		printf("Diz l· qual È a temperatura em Fortnite\n");
-
-		scanf_s("%f", &valor);
-
-		valor = (valor * 9 / 5) + 32;
-
-		printf("Em È CÈlsio È %2.f\n", valor);
-
-	}
-
-}
-
-
 	
+	if (type == 'C' || type == 'c') {
+		printf("Diz a temp em C√©lsius\n");
+		scanf_s("%f", &valor);
+		valor = (valor - 32) * 5 / 9;
+		printf("Em fortnite √© %2.f\n", valor);
+	}
+	else {
+		printf("Diz l√° qual √© a temperatura em Fortnite\n");
+		scanf_s("%f", &valor);
+		valor = (valor * 9 / 5) + 32;
+		printf("Em √© C√©lsio √© %2.f\n", valor);
+	}
+}	
