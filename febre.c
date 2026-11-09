@@ -5,18 +5,21 @@ int main(void)
 {
 	setlocale(LC_ALL, "");
 	float tmi, tmf;
-
-	printf("diz a temp inicial ");
+	printf("Diz a temp inicial\n ");
 	scanf_s("%f", &tmi);
-	printf("diz a temp final ");
+	printf("Diz a temp final\n ");
 	scanf_s("%f", &tmf);
 
-	if (tmi <= 35.5 || tmf <= 35.5)
-	{
-		printf("ANIFIBIOO\n");
+	if (tmi < 35.5 || tmf < 35.5) 
+		printf("És anfíbio\n");
+	else if ((tmi > 35.5 && tmi < 37) && (tmf > 35.5 && tmf < 37)) 
+		printf("Temperatura Normal\n");
+	else {
+		if (tmi > tmf)
+			printf("Temperatura Baixou\n");
+		else if (tmi < tmf)
+			printf("Temeperatura Aumentou\n");
+		else
+			printf("Temperatura manteve\n");
 	}
-		else if (tmi<=37 || tmf <= 37)
-			printf("Normal");
-
-		
 }
