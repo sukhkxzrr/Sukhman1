@@ -6,7 +6,7 @@ int main(void)
 	float valor;
 	char type;
 
-	printf("Célsius (C) ou Farendjenn (F)?\n");
+	printf("Célsius (C) ou Farenheit (F)?\n");
 	scanf_s("%c", &type);
 	
 	if (type == 'C' || type == 'c') {
@@ -16,7 +16,7 @@ int main(void)
 		printf("Em fortnite é %2.f\n", valor);
 	}
 	else {
-		printf("Diz lá qual é a temperatura em Fortnite\n");
+		printf("Diz lá qual é a temperatura em Farnheit\n");
 		scanf_s("%f", &valor);
 		valor = (valor * 9 / 5) + 32;
 		printf("Em é Célsio é %2.f\n", valor);
