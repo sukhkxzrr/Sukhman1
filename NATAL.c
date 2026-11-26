@@ -21,17 +21,17 @@ int main(void)
 		{
 			TPes = TPes + Qtd[i][j];
 		}
-		printf("A quantidade total de trazida por %s é: %i \n", Names[i], TPes);
+		printf("A quantidade total de trazida por %s Ã©: %i \n", Names[i], TPes);
 		TPes = 0;
 	}
-	printf("A quantidade total de produtos é: %i \n", QtTotal);
+	printf("A quantidade total de produtos Ã©: %i \n", QtTotal);
 	for (j = 0; j < 3; j++)
 	{
 		for (j = 0; j < 3; j++)
 		{
 			Tprod = Tprod + Qtd[i][j];
 		}
-		printf("A quantidade total de %s é: %i \n", Produtos[j]);
+		printf("A quantidade total de %s Ã©: %i \n", Produtos[j], Tprod);
 		Tprod = 0;
 	}
 	return 0;
